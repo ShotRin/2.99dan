@@ -51,19 +51,35 @@ public class gudan {
 //		result = 4*9;
 //		System.out.println(result);
 		
-		System.out.println("구구단 중 출력할 답은? : ");
-		Scanner scanner = new Scanner(System.in);
-		int number = scanner.nextInt();
-		System.out.println(number * 1);
-		System.out.println(number * 2);
-		System.out.println(number * 3);
-		System.out.println(number * 4);
-		System.out.println(number * 5);
-		System.out.println(number * 6);
-		System.out.println(number * 7);
-		System.out.println(number * 8);
-		System.out.println(number * 9);
+//		System.out.println("구구단 중 출력할 답은? : ");
+//		Scanner scanner = new Scanner(System.in);
+//		int number = scanner.nextInt();
+//		System.out.println(number * 1);
+//		System.out.println(number * 2);
+//		System.out.println(number * 3);
+//		System.out.println(number * 4);
+//		System.out.println(number * 5);
+//		System.out.println(number * 6);
+//		System.out.println(number * 7);
+//		System.out.println(number * 8);
+//		System.out.println(number * 9);
 		
-		
+		for(int i =2 ; i < 10 ; i++) {
+			for(int j=1; j<10 ; j++) {
+				System.out.println(i+"*"+j+"="+i*j);
+			}
+			System.out.println("");
+		}
+		int i = 2;
+		int j = 1;
+		while (i < 10) {
+			while(j<10) {
+				System.out.println(i+"*"+j+"="+i*j);
+				j++;
+			}
+			System.out.println("");
+			i++;
+			j=1;
+		}
 	}
 }
