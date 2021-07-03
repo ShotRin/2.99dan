@@ -50,36 +50,49 @@ public class gudan {
 //		System.out.println(result);
 //		result = 4*9;
 //		System.out.println(result);
+//		
+//		System.out.println("구구단 중 출력할 답은? : ");
+//		Scanner scanner = new Scanner(System.in);
+//		int number = scanner.nextInt();
+//		if ( number < 2 || number > 9)
+//		{
+//			for(int j=1; j<10 ; j++) {
+//				System.out.println(number+"*"+j+"="+number*j);
+//			}
+//		}
+//		else {
+//			System.out.println("알맞은 값을 입력해주세요.");
+//		}
+//		
+//		for(int i =2 ; i < 10 ; i++) {
+//			for(int j=1; j<10 ; j++) {
+//				System.out.println(i+"*"+j+"="+i*j);
+//			}
+//			System.out.println("");
+//		}
+//		int i = 2;
+//		int j = 1;
+//		while (i < 10) {
+//			while(j<10) {
+//				System.out.println(i+"*"+j+"="+i*j);
+//				j++;
+//			}
+//			System.out.println("");
+//			i++;
+//			j=1;
+//		}
 		
-		System.out.println("구구단 중 출력할 답은? : ");
-		Scanner scanner = new Scanner(System.in);
-		int number = scanner.nextInt();
-		if ( number < 2 || number > 9)
+		int[] result = new int[9];
+		for(int i = 0 ; i < result.length; i++)
 		{
-			for(int j=1; j<10 ; j++) {
-				System.out.println(number+"*"+j+"="+number*j);
-			}
+			result[i]= 2*(i+1);
+			System.out.println(result[i]);
 		}
-		else {
-			System.out.println("알맞은 값을 입력해주세요.");
-		}
-		
-		for(int i =2 ; i < 10 ; i++) {
-			for(int j=1; j<10 ; j++) {
-				System.out.println(i+"*"+j+"="+i*j);
-			}
-			System.out.println("");
-		}
-		int i = 2;
-		int j = 1;
-		while (i < 10) {
-			while(j<10) {
-				System.out.println(i+"*"+j+"="+i*j);
-				j++;
-			}
-			System.out.println("");
-			i++;
-			j=1;
+		int[] result2 = new int[9];
+		for(int i = 0 ; i < result2.length; i++)
+		{
+			result2[i]= 3*(i+1);
+			System.out.println(result2[i]);
 		}
 		
 	}
